@@ -248,7 +248,7 @@ class Connection(Context):
         # NOTE: parent __init__ sets self._config; for now we simply overwrite
         # that below. If it's somehow problematic we would want to break parent
         # __init__ up in a manner that is more cleanly overrideable.
-        super(Connection, self).__init__(config=config)
+        super().__init__(config=config)
 
         #: The .Config object referenced when handling default values (for e.g.
         #: user or port, when not explicitly given) or deciding how to behave.
